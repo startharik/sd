@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   TrendingUp, 
@@ -16,9 +16,6 @@ import {
 import { 
   AreaChart, 
   Area, 
-  XAxis, 
-  YAxis, 
-  CartesianGrid, 
   Tooltip, 
   ResponsiveContainer 
 } from 'recharts';
@@ -38,10 +35,8 @@ export default function Dashboard() {
   const [isInvestModalOpen, setIsInvestModalOpen] = useState(false);
   const [portfolioValue, setPortfolioValue] = useState(1240500);
   const [showToast, setShowToast] = useState(false);
-  const [lastInvestment, setLastInvestment] = useState(0);
 
   const handleInvestSuccess = (amount: number) => {
-    setLastInvestment(amount);
     // Add small delay to match modal closing animation
     setTimeout(() => {
       setPortfolioValue(prev => prev + amount);

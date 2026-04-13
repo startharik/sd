@@ -6,9 +6,7 @@ import {
   ShieldCheck, 
   UserCheck, 
   Globe, 
-  AlertCircle, 
   Lock, 
-  Unlock,
   RefreshCcw,
   CheckCircle2,
   XCircle,
@@ -18,8 +16,8 @@ import {
 export default function CompliancePage() {
   const [kycStatus, setKycStatus] = useState('pending');
   const [isProcessing, setIsProcessing] = useState(false);
-  const [fromAddress, setFromAddress] = useState('0x1234...5678');
-  const [toAddress, setToAddress] = useState('0xabcd...efgh');
+  const fromAddress = '0x1234...5678';
+  const toAddress = '0xabcd...efgh';
   const [isWhitelisted, setIsWhitelisted] = useState(false);
   const [simulationResult, setSimulationResult] = useState<null | 'success' | 'error'>(null);
 

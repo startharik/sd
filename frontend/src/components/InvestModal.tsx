@@ -9,10 +9,8 @@ import {
   RefreshCcw, 
   ShieldCheck, 
   Info,
-  Wallet,
   ArrowUpRight
 } from 'lucide-react';
-import { cn } from '@/lib/utils';
 
 interface InvestModalProps {
   isOpen: boolean;

@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { 
-  Vote, 
   CheckCircle2, 
   Clock, 
   Users, 
@@ -11,7 +10,8 @@ import {
   BarChart3,
   TrendingUp,
   FileText,
-  Gavel
+  Gavel,
+  RefreshCcw
 } from 'lucide-react';
 
 export default function GovernancePage() {

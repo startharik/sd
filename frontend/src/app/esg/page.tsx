@@ -55,7 +55,7 @@ export default function ESGPage() {
               Your investments have offset <span className="text-emerald-500">12,450 tonnes</span> of CO2 this year.
             </p>
             <p className="text-slate-400 mb-8 leading-relaxed">
-              That's equivalent to planting <span className="text-white font-medium">56,200 trees</span> or taking <span className="text-white font-medium">2,700 cars</span> off the road. Your ESG score has increased by <span className="text-emerald-500 font-bold">+12 pts</span> since last month.
+              That&apos;s equivalent to planting <span className="text-white font-medium">56,200 trees</span> or taking <span className="text-white font-medium">2,700 cars</span> off the road. Your ESG score has increased by <span className="text-emerald-500 font-bold">+12 pts</span> since last month.
             </p>
             
             <div className="grid grid-cols-3 gap-6">

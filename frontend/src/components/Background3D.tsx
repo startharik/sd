@@ -21,8 +21,8 @@ function BuildingModel() {
             mat.transparent = true;
             mat.opacity = 0.4; // Increased from 0.15 for better visibility
             mat.depthWrite = true; // Changed to true to prevent weird transparency issues
-            if ('color' in mat) {
-              (mat as any).color.set('#10b981'); // Emerald tint
+            if (mat instanceof THREE.MeshStandardMaterial || 'color' in mat) {
+              (mat as THREE.MeshStandardMaterial).color.set('#10b981'); // Emerald tint
             }
           });
         }
